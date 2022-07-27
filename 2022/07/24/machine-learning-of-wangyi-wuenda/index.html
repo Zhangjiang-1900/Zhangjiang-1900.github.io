@@ -17,6 +17,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/2022/07/24/machine-learning-of-wangyi-wuenda/regulation.jpg">
 <meta property="og:image" content="http://example.com/2022/07/24/machine-learning-of-wangyi-wuenda/regulation-gradient.jpg">
+<meta property="og:image" content="http://example.com/2022/07/24/machine-learning-of-wangyi-wuenda/normal.jpg">
 <meta property="og:image" content="http://example.com/2022/07/24/machine-learning-of-wangyi-wuenda/None-inverse.jpg">
 <meta property="og:image" content="http://example.com/2022/07/24/machine-learning-of-wangyi-wuenda/advanced-optimizer.jpg">
 <meta property="og:image" content="http://example.com/2022/07/24/machine-learning-of-wangyi-wuenda/logistic-advanced-optimization.jpg">
@@ -28,7 +29,7 @@
 <meta property="og:image" content="http://example.com/2022/07/24/machine-learning-of-wangyi-wuenda/8-6.png">
 <meta property="og:image" content="http://example.com/2022/07/24/machine-learning-of-wangyi-wuenda/8-7.png">
 <meta property="article:published_time" content="2022-07-24T12:48:07.000Z">
-<meta property="article:modified_time" content="2022-07-26T15:41:59.443Z">
+<meta property="article:modified_time" content="2022-07-26T23:51:49.680Z">
 <meta property="article:author" content="ZhangJiang">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2022/07/24/machine-learning-of-wangyi-wuenda/regulation.jpg">
@@ -287,81 +288,83 @@ mjx-container[display="true"] + br {
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>学习网易版吴恩达之路<br><span id="more"></span></p>
-<h1 id="chapter-7"><a href="#chapter-7" class="headerlink" title="chapter 7"></a>chapter 7</h1><hr>
-<h2 id="regularization-正则化"><a href="#regularization-正则化" class="headerlink" title="regularization(正则化)"></a>regularization(正则化)</h2><center>
+        <p>学习网易版吴恩达之路</p>
+<span id="more"></span>
+<h1>chapter 7</h1>
+<hr>
+<h2 id="regularization-正则化">regularization(正则化)</h2>
+<center>
 <img src="regulation.jpg" width="70%" height="70%">
 regulation 7.1
 </center>
-
-<p>penalize big parameter （为大的参数加入惩罚项，使得大的参数尽量小）<br>在代价函数的右侧加上 λ(一个较大的数) 乘以 参数平方和<br>那么为了让 代价函数的值变小 θ的取值就只能变小</p>
+<p>penalize big parameter （为大的参数加入惩罚项，使得大的参数尽量小）在代价函数的右侧加上 λ(一个较大的数) 乘以 参数平方和那么为了让 代价函数的值变小 θ的取值就只能变小</p>
 <p>！注意： 小的参数能让我们获得一个更简单和光滑的函数 防止overfitting</p>
-<p>缺点是我们不知道该选择出什么参数该变小<br>所以我们只能乘以所有参数平方和</p>
+<p>缺点是我们不知道该选择出什么参数该变小所以我们只能乘以所有参数平方和</p>
 <p>如果λ太大 所有参数都将接近于零</p>
-<h2 id="regulation-linear-regression（正则化线性回归）"><a href="#regulation-linear-regression（正则化线性回归）" class="headerlink" title="regulation linear regression（正则化线性回归）"></a>regulation linear regression（正则化线性回归）</h2><center>
+<h2 id="regulation-linear-regression（正则化线性回归）">regulation linear regression（正则化线性回归）</h2>
+<center>
 <img src="regulation-gradient.jpg" width="70%" height="70%">
 regulation 7.2
 </center>
 这就是正则化方程对每个参数求导的结果
-
-## normal equation （正规方程）
+<h2 id="normal-equation-（正规方程）">normal equation （正规方程）</h2>
 <center>
-
+<img src="normal.jpg" width="70%" height="70%">
 regulation 7.3
 </center>
 对每个参数求导 然后让方程等于 0 一次求得每个参数的最佳值
 normal equation 可以理解为一次性解出了梯度下降的答案
 它配有很多高级算法
-
-
-## Non-invertibilit (不可逆矩阵的求解)
+<h2 id="Non-invertibilit-不可逆矩阵的求解">Non-invertibilit (不可逆矩阵的求解)</h2>
 <center>
 <img src="None-inverse.jpg" width="70%" height="70%">
 regulation 7.4
 </center>
-
 <p>已经证明 如果 λ大于0 上面这样的矩阵就是可逆的</p>
-<h2 id="Logistic-regulation-regression-逻辑回归正则化"><a href="#Logistic-regulation-regression-逻辑回归正则化" class="headerlink" title="Logistic regulation regression(逻辑回归正则化)"></a>Logistic regulation regression(逻辑回归正则化)</h2><center>
+<h2 id="Logistic-regulation-regression-逻辑回归正则化">Logistic regulation regression(逻辑回归正则化)</h2>
+<center>
 <img src="advanced-optimizer.jpg" width="70%" height="70%">
-
-regulation 7.5
+<p>regulation 7.5</p>
 </center>
 <center>
 <img src="logistic-advanced-optimization.jpg" width="70%" height="70%">
 regulation 7.6
 </center>
-
 <p>能迅速求出逻辑回归的解</p>
-<h1 id="chapter-8"><a href="#chapter-8" class="headerlink" title="chapter 8"></a>chapter 8</h1><h2 id="non-linear-hypothesis（非线性假设）"><a href="#non-linear-hypothesis（非线性假设）" class="headerlink" title="non-linear hypothesis（非线性假设）"></a>non-linear hypothesis（非线性假设）</h2><p>当一个数据集的特征过多的时候，比如一个房子它有很多因素（多少楼，多少个卧室，建立了几年）<br>用平常的复杂二次型函数确实能模拟出来，但是参数太多了，会很慢<br>所以我们引入神经网络</p>
-<script type="math/tex; mode=display">g(\theta_0+\theta_1x_1+\theta_2x_2+...+\theta_nx_n)</script><h2 id="neutral-Netwrok（神经网络）"><a href="#neutral-Netwrok（神经网络）" class="headerlink" title="neutral Netwrok（神经网络）"></a>neutral Netwrok（神经网络）</h2><center>
+<h1>chapter 8</h1>
+<h2 id="non-linear-hypothesis（非线性假设）">non-linear hypothesis（非线性假设）</h2>
+<p>当一个数据集的特征过多的时候，比如一个房子它有很多因素（多少楼，多少个卧室，建立了几年）用平常的复杂二次型函数确实能模拟出来，但是参数太多了，会很慢所以我们引入神经网络<br>
+<mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="31.914ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 14106.1 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"></path></g><g data-mml-node="mo" transform="translate(477,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="msub" transform="translate(866,0)"><g data-mml-node="mi"><path data-c="1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"></path></g><g data-mml-node="mn" transform="translate(502,-150) scale(0.707)"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g></g><g data-mml-node="mo" transform="translate(1993.8,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="msub" transform="translate(2994,0)"><g data-mml-node="mi"><path data-c="1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"></path></g><g data-mml-node="mn" transform="translate(502,-150) scale(0.707)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g><g data-mml-node="msub" transform="translate(3899.6,0)"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mn" transform="translate(605,-150) scale(0.707)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g><g data-mml-node="mo" transform="translate(5130.3,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="msub" transform="translate(6130.5,0)"><g data-mml-node="mi"><path data-c="1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"></path></g><g data-mml-node="mn" transform="translate(502,-150) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g><g data-mml-node="msub" transform="translate(7036.1,0)"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mn" transform="translate(605,-150) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g><g data-mml-node="mo" transform="translate(8266.9,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mo" transform="translate(9267.1,0)"><path data-c="2026" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60ZM525 60Q525 84 542 102T585 120Q609 120 627 104T646 61Q646 36 629 18T586 0T543 17T525 60ZM972 60Q972 84 989 102T1032 120Q1056 120 1074 104T1093 61Q1093 36 1076 18T1033 0T990 17T972 60Z"></path></g><g data-mml-node="mo" transform="translate(10661.3,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="msub" transform="translate(11661.5,0)"><g data-mml-node="mi"><path data-c="1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"></path></g><g data-mml-node="mi" transform="translate(502,-150) scale(0.707)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g><g data-mml-node="msub" transform="translate(12637.8,0)"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mi" transform="translate(605,-150) scale(0.707)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g><g data-mml-node="mo" transform="translate(13717.1,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg></mjx-container></p>
+<h2 id="neutral-Netwrok（神经网络）">neutral Netwrok（神经网络）</h2>
+<center>
 <img src="8-1.png" width="60%" height="60%">
 </center>
 <center>
 <img src="8-2.png" width="60%" height="60%">
 </center>
-
-<p>神经网络的模型<br>参数:parameter,weight<br>sigmoid activation-function</p>
-<h2 id="forwar-progation-Vectorized-implementation-向前传播"><a href="#forwar-progation-Vectorized-implementation-向前传播" class="headerlink" title="forwar progation Vectorized implementation(向前传播)"></a>forwar progation Vectorized implementation(向前传播)</h2><center>
+<p>神经网络的模型参数:parameter,weight<br>
+sigmoid activation-function</p>
+<h2 id="forwar-progation-Vectorized-implementation-向前传播">forwar progation Vectorized implementation(向前传播)</h2>
+<center>
 <img src="8-3.png" width="70%" height="70%">
 </center>
-
-<p>之所以叫向前传播是因为我们从输入层到隐藏层再到了输出层<br>将每个数据都进行向量化处理 变得方便起来<br>可以多次回顾怎么创建向量的<br>前一层的所有数据在乘以weight后 都会加入到不同的神经元上，作为下一层的输入<br>注意每层都加上了bias</p>
-<h2 id="neutral-network-example-and-intuition（神经网络的列子和直觉理解）"><a href="#neutral-network-example-and-intuition（神经网络的列子和直觉理解）" class="headerlink" title="neutral network example and intuition（神经网络的列子和直觉理解）"></a>neutral network example and intuition（神经网络的列子和直觉理解）</h2><center>
+<p>之所以叫向前传播是因为我们从输入层到隐藏层再到了输出层将每个数据都进行向量化处理 变得方便起来可以多次回顾怎么创建向量的前一层的所有数据在乘以weight后 都会加入到不同的神经元上，作为下一层的输入注意每层都加上了bias</p>
+<h2 id="neutral-network-example-and-intuition（神经网络的列子和直觉理解）">neutral network example and intuition（神经网络的列子和直觉理解）</h2>
+<center>
 <img src="8-4.png" width="70%" height="70%">
 </center>
-
 <center>
 <img src="8-5.png" width="70%" height="70%">
 </center>
-
 <center>
 <img src="8-6.png" width="70%" height="70%">
 </center>
-
-<p><center>
+<center>
 <img src="8-7.png" width="70%" height="70%">
-</center><br>注意参数 和 计算的过程<br>就能理解 神经network的原理<br>最后的XOR function 是个综合</p>
-
+</center>
+注意参数 和 计算的过程
+就能理解 神经network的原理
+最后的XOR function 是个综合
       
 
       

@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Tag: 李沐 | Hexo</title>
+  <title>Study Numpy | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/tags/%E6%9D%8E%E6%B2%90/index.html">
+  <meta name="description" content="numpy学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Study Numpy">
+<meta property="og:url" content="http://example.com/2022/10/12/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B9%8Bnumpy/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="numpy学习">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-10-12T13:11:02.000Z">
+<meta property="article:modified_time" content="2022-10-12T13:11:16.681Z">
 <meta property="article:author" content="ZhangJiang">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -32,7 +37,119 @@
 
   
 
-<meta name="generator" content="Hexo 6.2.0"></head>
+<meta name="generator" content="Hexo 6.2.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -150,71 +267,647 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-数据分析之numpy" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/03/Dive-into-deep-learning-Li-Mu/" class="archive-article-date">
-  	<time datetime="2022-08-03T11:18:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-03</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/03/Dive-into-deep-learning-Li-Mu/">Dive into deep learning-Li Mu</a>
+    <h1 class="article-title" itemprop="name">
+      Study Numpy
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2022/10/12/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B9%8Bnumpy/" class="archive-article-date">
+  	<time datetime="2022-10-12T13:11:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-10-12</time>
+</a>
+        
+
+         <!-- 添加代码 -->
+        
+      
+      
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        <p>numpy学习</p>
+<span id="more"></span>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> array</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br></pre></td></tr></table></figure>
+<h2 id="py中的数据类型">py中的数据类型</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.array([<span class="number">1</span>,<span class="number">4</span>,<span class="number">2</span>,<span class="number">5</span>,<span class="number">3</span>], dtype=<span class="string">'float32'</span>) <span class="comment">#类型必须一样</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([1., 4., 2., 5., 3.], dtype=float32)
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.zeros(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.ones((<span class="number">3</span>,<span class="number">2</span>))</span><br></pre></td></tr></table></figure>
+<pre><code>array([[1., 1.],
+       [1., 1.],
+       [1., 1.]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.full((<span class="number">3</span>,<span class="number">2</span>), <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>array([[1, 1],
+       [1, 1],
+       [1, 1]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.linspace(<span class="number">0</span>,<span class="number">1</span>,<span class="number">5</span>) <span class="comment">#生成5个从0到1 的 均匀值</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([0.  , 0.25, 0.5 , 0.75, 1.  ])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.random.randint(<span class="number">0</span>,<span class="number">10</span>,(<span class="number">3</span>,<span class="number">3</span>)) <span class="comment">#[0,10) 3x3 matrix</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([[4, 1, 4],
+       [8, 6, 8],
+       [3, 6, 8]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.eye(<span class="number">3</span>) <span class="comment"># 3x3 identification matrix</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([[1., 0., 0.],
+       [0., 1., 0.],
+       [0., 0., 1.]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.empty(<span class="number">3</span>) <span class="comment">#内存中未初始化的三个整数数据</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([1., 1., 1.])
+</code></pre>
+<h2 id="数据基础">数据基础</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.random.seed(<span class="number">0</span>) </span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x3 = np.random.randint(<span class="number">10</span>, size = (<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>))</span><br><span class="line">x3.ndim, x3.shape, x3.size <span class="comment"># 维度， 每个维度的大小， 数组的总大小</span></span><br></pre></td></tr></table></figure>
+<pre><code>(3, (3, 4, 5), 60)
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x1 = np.array(<span class="built_in">range</span>(<span class="number">0</span>,<span class="number">9</span>))</span><br><span class="line">x1</span><br></pre></td></tr></table></figure>
+<pre><code>array([0, 1, 2, 3, 4, 5, 6, 7, 8])
+</code></pre>
+<p>强调numpy 的类型全都是通类型的 比如都是整形或者浮点型</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = np.arange(<span class="number">10</span>) <span class="comment">#切片</span></span><br><span class="line">x[:<span class="number">5</span>], x[<span class="number">5</span>:], x[<span class="number">4</span>:<span class="number">7</span>],x[::<span class="number">2</span>],x[::-<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
+<pre><code>(array([0, 1, 2, 3, 4]),
+ array([5, 6, 7, 8, 9]),
+ array([4, 5, 6]),
+ array([0, 2, 4, 6, 8]),
+ array([9, 8, 7, 6, 5, 4, 3, 2, 1, 0]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x2 = np.arange((<span class="number">9</span>)).reshape((<span class="number">3</span>,<span class="number">3</span>))</span><br><span class="line">x2, x2[:,<span class="number">0</span>] , x2[<span class="number">0</span>, :] ,x2[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
+<pre><code>(array([[0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8]]),
+ array([0, 3, 6]),
+ array([0, 1, 2]),
+ array([0, 1, 2]))
+</code></pre>
+<p>注意，numpy中的切片是数据的视图，不是数据的副本（python中是数据的副本），数据的视图以为着改变切片的值，也会改变原来数据的值</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x2_sub = x2[:,<span class="number">0</span>].copy() <span class="comment"># 生成数据的副本</span></span><br><span class="line">x2_sub</span><br></pre></td></tr></table></figure>
+<pre><code>array([0, 3, 6])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = np.array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])</span><br><span class="line">x.reshape(<span class="number">1</span>,<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>array([[1, 2, 3]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x[np.newaxis,:] <span class="comment"># 获得行向量</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([[1, 2, 3]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x[:,np.newaxis] <span class="comment"># 列向量</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([[1],
+       [2],
+       [3]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 数据的拼接</span></span><br><span class="line">x = np.array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])</span><br><span class="line">y = np.array([<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>])</span><br><span class="line">np.concatenate([x,y])</span><br></pre></td></tr></table></figure>
+<pre><code>array([1, 2, 3, 3, 2, 1])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">grid = np.arange(<span class="number">6</span>).reshape(<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line">grid</span><br></pre></td></tr></table></figure>
+<pre><code>array([[0, 1, 2],
+       [3, 4, 5]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.concatenate([grid,grid],axis=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>array([[0, 1, 2, 0, 1, 2],
+       [3, 4, 5, 3, 4, 5]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.concatenate([grid,grid])</span><br></pre></td></tr></table></figure>
+<pre><code>array([[0, 1, 2],
+       [3, 4, 5],
+       [0, 1, 2],
+       [3, 4, 5]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = np.array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])</span><br><span class="line">grid = np.array([[<span class="number">9</span>,<span class="number">8</span>,<span class="number">7</span>],[<span class="number">6</span>,<span class="number">5</span>,<span class="number">4</span>]])</span><br><span class="line">np.vstack([x,grid]) <span class="comment">#垂直栈数组，列数必须一致</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([[1, 2, 3],
+       [9, 8, 7],
+       [6, 5, 4]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">y = np.array([[<span class="number">99</span>],[<span class="number">99</span>]])</span><br><span class="line">np.hstack([y,grid])</span><br></pre></td></tr></table></figure>
+<pre><code>array([[99,  9,  8,  7],
+       [99,  6,  5,  4]])
+</code></pre>
+<p>分裂</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">99</span>,<span class="number">99</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>]</span><br><span class="line">x1, x2, x3 = np.split(x,[<span class="number">3</span>,<span class="number">5</span>]) <span class="comment">#3 5 is break point</span></span><br><span class="line">x1,x2,x3</span><br></pre></td></tr></table></figure>
+<pre><code>(array([1, 2, 3]), array([99, 99]), array([3, 2, 1]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">grid = np.arange(<span class="number">16</span>).reshape(<span class="number">4</span>,<span class="number">4</span>)</span><br><span class="line">upper, lower  = np.vsplit(grid, [<span class="number">2</span>])</span><br><span class="line">upper ,lower</span><br></pre></td></tr></table></figure>
+<pre><code>(array([[0, 1, 2, 3],
+        [4, 5, 6, 7]]),
+ array([[ 8,  9, 10, 11],
+        [12, 13, 14, 15]]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">left, right = np.hsplit(grid,[<span class="number">2</span>])</span><br><span class="line">left, right</span><br></pre></td></tr></table></figure>
+<pre><code>(array([[ 0,  1],
+        [ 4,  5],
+        [ 8,  9],
+        [12, 13]]),
+ array([[ 2,  3],
+        [ 6,  7],
+        [10, 11],
+        [14, 15]]))
+</code></pre>
+<h2 id="通用的函数">通用的函数</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">values = np.random.randint(<span class="number">1</span>,<span class="number">10</span>,size=<span class="number">5</span>)</span><br><span class="line">values</span><br></pre></td></tr></table></figure>
+<pre><code>array([6, 4, 2, 5, 1])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>/values</span><br></pre></td></tr></table></figure>
+<pre><code>array([0.16666667, 0.25      , 0.5       , 0.2       , 1.        ])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.arange(<span class="number">5</span>),np.arange(<span class="number">1</span>,<span class="number">6</span>),np.arange(<span class="number">5</span>) / np.arange(<span class="number">1</span>,<span class="number">6</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>(array([0, 1, 2, 3, 4]),
+ array([1, 2, 3, 4, 5]),
+ array([0.        , 0.5       , 0.66666667, 0.75      , 0.8       ]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">abs</span>(values), np.<span class="built_in">abs</span>(values)</span><br></pre></td></tr></table></figure>
+<pre><code>(array([6, 4, 2, 5, 1]), array([6, 4, 2, 5, 1]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = np.array([<span class="number">3</span>-<span class="number">5j</span>, <span class="number">3</span>-<span class="number">3j</span>])</span><br><span class="line">x,<span class="built_in">abs</span>(x)</span><br></pre></td></tr></table></figure>
+<pre><code>(array([3.-5.j, 3.-3.j]), array([5.83095189, 4.24264069]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">theta = np.linspace(<span class="number">0</span>, np.pi, <span class="number">3</span>)</span><br><span class="line">theta</span><br></pre></td></tr></table></figure>
+<pre><code>array([0.        , 1.57079633, 3.14159265])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.sin(theta)</span><br></pre></td></tr></table></figure>
+<pre><code>array([0.0000000e+00, 1.0000000e+00, 1.2246468e-16])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.exp(values), np.exp2(values) , np.power(values,<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>(array([403.42879349,  54.59815003,   7.3890561 , 148.4131591 ,
+          2.71828183]),
+ array([64., 16.,  4., 32.,  2.]),
+ array([216,  64,   8, 125,   1], dtype=int32))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">10</span>]</span><br><span class="line">x, np.log(x), np.log2(x), np.log10(x)</span><br></pre></td></tr></table></figure>
+<pre><code>([1, 2, 4, 10],
+ array([0.        , 0.69314718, 1.38629436, 2.30258509]),
+ array([0.        , 1.        , 2.        , 3.32192809]),
+ array([0.        , 0.30103   , 0.60205999, 1.        ]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = [<span class="number">0</span>, <span class="number">0.001</span>, <span class="number">0.01</span>]</span><br><span class="line">np.expm1(x), np.log1p(x) <span class="comment">#保存较好的exp 与 log 的精度</span></span><br></pre></td></tr></table></figure>
+<pre><code>(array([0.        , 0.0010005 , 0.01005017]),
+ array([0.        , 0.0009995 , 0.00995033]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> scipy <span class="keyword">import</span> special <span class="comment"># 一些晦涩的数学计算</span></span><br><span class="line">x = [<span class="number">1</span>,<span class="number">5</span>,<span class="number">10</span>]</span><br><span class="line">special.gamma(x)</span><br></pre></td></tr></table></figure>
+<pre><code>array([1.0000e+00, 2.4000e+01, 3.6288e+05])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = np.arange(<span class="number">5</span>)</span><br><span class="line">y = np.empty(<span class="number">5</span>)</span><br><span class="line">np.add(x,<span class="number">2</span>,out=y) <span class="comment">#y 存储了结果</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([2., 3., 4., 5., 6.])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">y=np.zeros(<span class="number">10</span>)</span><br><span class="line">np.add(<span class="number">2</span>,x, out= y[::<span class="number">2</span>]),y <span class="comment">#out 能够节约内存</span></span><br></pre></td></tr></table></figure>
+<pre><code>(array([2., 3., 4., 5., 6.]), array([2., 0., 3., 0., 4., 0., 5., 0., 6., 0.]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = np.arange(<span class="number">1</span>,<span class="number">6</span>)</span><br><span class="line">np.add.reduce(x) <span class="comment">#聚合 返回x中的和</span></span><br></pre></td></tr></table></figure>
+<pre><code>15
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.multiply.reduce(x) <span class="comment"># 返回x中的乘积</span></span><br></pre></td></tr></table></figure>
+<pre><code>120
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = np.arange(<span class="number">1</span>,<span class="number">6</span>)</span><br><span class="line">np.multiply.outer(x,x)</span><br></pre></td></tr></table></figure>
+<pre><code>array([[ 1,  2,  3,  4,  5],
+       [ 2,  4,  6,  8, 10],
+       [ 3,  6,  9, 12, 15],
+       [ 4,  8, 12, 16, 20],
+       [ 5, 10, 15, 20, 25]])
+</code></pre>
+<p>聚合：最大值，最小值 和 其他值</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">L = np.random.random(<span class="number">100</span>)</span><br><span class="line"><span class="built_in">sum</span>(L), np.<span class="built_in">sum</span>(L) <span class="comment"># np.sum 更快</span></span><br></pre></td></tr></table></figure>
+<pre><code>(49.525697962195295, 49.525697962195295)
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">min</span>(L), <span class="built_in">max</span>(L), np.<span class="built_in">min</span>(L), np.<span class="built_in">max</span>(L), L.<span class="built_in">max</span>(), L.<span class="built_in">min</span>(), L.<span class="built_in">sum</span>() <span class="comment">#可以用numpy 对象调用</span></span><br></pre></td></tr></table></figure>
+<pre><code>(0.026288157546346502,
+ 0.9659551707186157,
+ 0.026288157546346502,
+ 0.9659551707186157,
+ 0.9659551707186157,
+ 0.026288157546346502,
+ 49.525697962195295)
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">M = np.random.random((<span class="number">3</span>,<span class="number">4</span>))</span><br><span class="line">M</span><br></pre></td></tr></table></figure>
+<pre><code>array([[0.90081848, 0.67500899, 0.80268522, 0.67753471],
+       [0.14589007, 0.29975337, 0.64504338, 0.58363904],
+       [0.32296511, 0.67192068, 0.81744755, 0.82681739]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">M.<span class="built_in">sum</span>(), M.<span class="built_in">min</span>(axis=<span class="number">0</span>) <span class="comment">#沿着第一个维度方向走， 取出最小的， 每列最小</span></span><br></pre></td></tr></table></figure>
+<pre><code>(7.369523989664183, array([0.14589007, 0.29975337, 0.64504338, 0.58363904]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">M.<span class="built_in">max</span>(axis=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>array([0.90081848, 0.64504338, 0.82681739])
+</code></pre>
+<h2 id="数组的计算：-广播">数组的计算： 广播</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = np.array([<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>])</span><br><span class="line">b = np.array([<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span>])</span><br><span class="line">M = np.ones((<span class="number">3</span>,<span class="number">3</span>))</span><br><span class="line">M, M+a</span><br></pre></td></tr></table></figure>
+<pre><code>(array([[1., 1., 1.],
+        [1., 1., 1.],
+        [1., 1., 1.]]),
+ array([[1., 2., 3.],
+        [1., 2., 3.],
+        [1., 2., 3.]]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = np.arange(<span class="number">3</span>)</span><br><span class="line">b = np.arange(<span class="number">3</span>)[:, np.newaxis]</span><br><span class="line">a,b,a+b</span><br></pre></td></tr></table></figure>
+<pre><code>(array([0, 1, 2]),
+ array([[0],
+        [1],
+        [2]]),
+ array([[0, 1, 2],
+        [1, 2, 3],
+        [2, 3, 4]]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">M = np.ones((<span class="number">2</span>,<span class="number">3</span>))</span><br><span class="line">a = np.arange(<span class="number">3</span>)</span><br><span class="line">M,a,M+a,a.shape <span class="comment"># a的性质从 (3,) 到 （1,3） 再到 （2,3）</span></span><br></pre></td></tr></table></figure>
+<pre><code>(array([[1., 1., 1.],
+        [1., 1., 1.]]),
+ array([0, 1, 2]),
+ array([[1., 2., 3.],
+        [1., 2., 3.]]),
+ (3,))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = np.arange(<span class="number">3</span>).reshape((<span class="number">3</span>,<span class="number">1</span>))</span><br><span class="line">b = np.arange(<span class="number">3</span>)</span><br><span class="line">a,b,a+b <span class="comment"># 1.小的维度在左边补1。 2.沿着维度为1 的维度 扩展到与另一个数组匹配的形状。3.如果某一个维度不一样，且都不是1，则报错！！！</span></span><br></pre></td></tr></table></figure>
+<pre><code>(array([[0],
+        [1],
+        [2]]),
+ array([0, 1, 2]),
+ array([[0, 1, 2],
+        [1, 2, 3],
+        [2, 3, 4]]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ！！！！重点</span></span><br><span class="line">M  = np.ones((<span class="number">3</span>,<span class="number">2</span>))</span><br><span class="line">a = np.arange(<span class="number">3</span>)</span><br><span class="line">M+a <span class="comment">#只能够在左边补 1！！！</span></span><br></pre></td></tr></table></figure>
+<pre><code>---------------------------------------------------------------------------
+
+ValueError                                Traceback (most recent call last)
+
+Input In [98], in &lt;cell line: 4&gt;()
+      2 M  = np.ones((3,2))
+      3 a = np.arange(3)
+----&gt; 4 M+a
+
+
+ValueError: operands could not be broadcast together with shapes (3,2) (3,) 
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">M = np.ones((<span class="number">3</span>,<span class="number">2</span>))</span><br><span class="line">a = np.arange(<span class="number">3</span>)[:,np.newaxis] <span class="comment">#这样才能右边补1！！！！</span></span><br><span class="line">M+a</span><br></pre></td></tr></table></figure>
+<pre><code>array([[1., 1.],
+       [2., 2.],
+       [3., 3.]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">X = np.random.random((<span class="number">10</span>,<span class="number">3</span>))</span><br><span class="line">Xmean = X.mean(<span class="number">0</span>) <span class="comment">#按照第一个维度聚合</span></span><br><span class="line">Xmean</span><br></pre></td></tr></table></figure>
+<pre><code>array([0.49756618, 0.2911251 , 0.58460209])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x_center = X- Xmean</span><br><span class="line">x_center, x_center.mean(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>(array([[-0.12839817,  0.01154548,  0.25027963],
+        [ 0.34743712,  0.1159468 ,  0.28046033],
+        [ 0.36224285,  0.33130597, -0.57002202],
+        [-0.09758155,  0.26503518,  0.33411006],
+        [-0.03006994, -0.16134044, -0.45073698],
+        [-0.28342043, -0.07396287,  0.08175156],
+        [-0.2303938 , -0.26558647, -0.05275329],
+        [-0.20599968, -0.14867223,  0.13102038],
+        [ 0.41972477,  0.16052583, -0.39664322],
+        [-0.15354116, -0.23479725,  0.39253355]]),
+ array([-1.66533454e-17,  5.55111512e-18, -1.22124533e-16]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = np.arange(<span class="number">3</span>)</span><br><span class="line">y = np.arange(<span class="number">3</span>)[:,np.newaxis]</span><br><span class="line">x,y,x*y</span><br></pre></td></tr></table></figure>
+<pre><code>(array([0, 1, 2]),
+ array([[0],
+        [1],
+        [2]]),
+ array([[0, 0, 0],
+        [0, 1, 2],
+        [0, 2, 4]]))
+</code></pre>
+<h2 id="比较-掩码-和布尔逻辑">比较 掩码 和布尔逻辑</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = np.array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>])</span><br><span class="line">x &lt; <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([ True,  True, False, False, False])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2</span> * x == x**<span class="number">2</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([False,  True, False, False, False])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.equal(x,<span class="number">3</span>),np.less(x,<span class="number">3</span>), np.less_equal(x,<span class="number">3</span>), np.greater(x,<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>(array([False, False,  True, False, False]),
+ array([ True,  True, False, False, False]),
+ array([ True,  True,  True, False, False]),
+ array([False, False, False,  True,  True]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rng = np.random.RandomState(<span class="number">0</span>)</span><br><span class="line">x = rng.randint(<span class="number">10</span>,size=(<span class="number">3</span>,<span class="number">4</span>))</span><br><span class="line">x, x&lt;<span class="number">3</span></span><br></pre></td></tr></table></figure>
+<pre><code>(array([[5, 0, 3, 3],
+        [7, 9, 3, 5],
+        [2, 4, 7, 6]]),
+ array([[False,  True, False, False],
+        [False, False, False, False],
+        [ True, False, False, False]]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.count_nonzero(x&lt;<span class="number">6</span>) <span class="comment">#True 的个数</span></span><br></pre></td></tr></table></figure>
+<pre><code>8
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.<span class="built_in">sum</span>(x&lt;<span class="number">6</span>) <span class="comment">#True的个数，True为解释为1，False为0</span></span><br></pre></td></tr></table></figure>
+<pre><code>8
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x,np.<span class="built_in">sum</span>(x&lt;<span class="number">6</span>, axis=<span class="number">1</span>) <span class="comment">#每行多少小于6</span></span><br></pre></td></tr></table></figure>
+<pre><code>(array([[5, 0, 3, 3],
+        [7, 9, 3, 5],
+        [2, 4, 7, 6]]),
+ array([4, 2, 2]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.<span class="built_in">any</span>(x&gt;<span class="number">8</span>) <span class="comment">#是否至少有一个大于8</span></span><br></pre></td></tr></table></figure>
+<pre><code>True
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.<span class="built_in">any</span>(x&lt;<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>False
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.<span class="built_in">all</span>(x&lt;<span class="number">10</span>) <span class="comment">#是否都小于10</span></span><br></pre></td></tr></table></figure>
+<pre><code>True
+</code></pre>
+<p>布尔运算符</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.<span class="built_in">sum</span>((x&lt;<span class="number">5</span>) &amp; (x&gt;<span class="number">2</span>)) <span class="comment">#numpy 重载了 &amp; | ^ ~这些安位操作符</span></span><br></pre></td></tr></table></figure>
+<pre><code>4
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.bitwise_and(x&lt;<span class="number">5</span>,x&gt;<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>array([[False, False,  True,  True],
+       [False, False,  True, False],
+       [False,  True, False, False]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x&lt;<span class="number">5</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([[False,  True,  True,  True],
+       [False, False,  True, False],
+       [ True,  True, False, False]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x[x&lt;<span class="number">5</span>] <span class="comment">#返回表示为True 的值的一维数组</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([0, 3, 3, 3, 2, 4])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.sort(x),np.median(x) <span class="comment">#返回中间值</span></span><br></pre></td></tr></table></figure>
+<pre><code>(array([[0, 3, 3, 5],
+        [3, 5, 7, 9],
+        [2, 4, 6, 7]]),
+ 4.5)
+</code></pre>
+<h2 id="花哨的索引">花哨的索引</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rand = np.random.RandomState(<span class="number">42</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x = rand.randint(<span class="number">100</span>,size=<span class="number">10</span>)</span><br><span class="line">y = np.arange(<span class="number">4</span>)</span><br><span class="line">z = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">x,y,z</span><br></pre></td></tr></table></figure>
+<pre><code>(array([91, 59, 70, 43,  7, 46, 34, 77, 80, 35]),
+ array([0, 1, 2, 3]),
+ [1, 2, 3])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[x[<span class="number">3</span>], x[<span class="number">7</span>], x[<span class="number">2</span>]] <span class="comment"># 如此创造一个数组</span></span><br></pre></td></tr></table></figure>
+<pre><code>[71, 86, 14]
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ind = [<span class="number">3</span>, <span class="number">7</span> ,<span class="number">4</span>]</span><br><span class="line"></span><br><span class="line">ind,x,x[ind] <span class="comment">#结果的形状 与 索引数组一致。 而不是与 被索引数组 一致</span></span><br></pre></td></tr></table></figure>
+<pre><code>([3, 7, 4],
+ array([91, 59, 70, 43,  7, 46, 34, 77, 80, 35]),
+ array([43, 77,  7]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ind = np.array([[<span class="number">3</span>,<span class="number">7</span>],[<span class="number">4</span>,<span class="number">5</span>]]) <span class="comment">#关于以为数组x的花哨索引</span></span><br><span class="line">ind,x[ind]</span><br></pre></td></tr></table></figure>
+<pre><code>(array([[3, 7],
+        [4, 5]]),
+ array([[43, 77],
+        [ 7, 46]]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">X = np.arange(<span class="number">12</span>).reshape((<span class="number">3</span>,<span class="number">4</span>))</span><br><span class="line">X</span><br></pre></td></tr></table></figure>
+<pre><code>array([[ 0,  1,  2,  3],
+       [ 4,  5,  6,  7],
+       [ 8,  9, 10, 11]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">row = np.array([<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>])</span><br><span class="line">col = [<span class="number">2</span>,<span class="number">1</span>,<span class="number">3</span>]</span><br><span class="line">X[row,col] <span class="comment">#花哨索引的配对，遵循广播原则</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([ 2,  5, 11])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">temp = X[row[:,np.newaxis],col] <span class="comment">#row=(3,1) col=(3)</span></span><br><span class="line">temp</span><br></pre></td></tr></table></figure>
+<pre><code>array([[ 2,  1,  3],
+       [ 6,  5,  7],
+       [10,  9, 11]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">row[:,np.newaxis]*col</span><br></pre></td></tr></table></figure>
+<pre><code>array([[0, 0, 0],
+       [2, 1, 3],
+       [4, 2, 6]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">X = np.arange(<span class="number">12</span>).reshape(<span class="number">3</span>,<span class="number">4</span>)</span><br><span class="line">X</span><br></pre></td></tr></table></figure>
+<pre><code>array([[ 0,  1,  2,  3],
+       [ 4,  5,  6,  7],
+       [ 8,  9, 10, 11]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X [<span class="number">2</span>, [<span class="number">2</span>,<span class="number">0</span>,<span class="number">1</span>]]</span><br></pre></td></tr></table></figure>
+<pre><code>array([10,  8,  9])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mask = np.array([<span class="number">1</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">0</span>],dtype=<span class="built_in">bool</span>) <span class="comment">#对于 bool 变量这个的形状最后是（2，） 不是（4，）</span></span><br><span class="line">mask.shape,X[row[:,np.newaxis], mask]</span><br></pre></td></tr></table></figure>
+<pre><code>((4,),
+ array([[ 0,  2],
+        [ 4,  6],
+        [ 8, 10]]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = np.arange(<span class="number">10</span>)</span><br><span class="line">i = np.array([<span class="number">2</span>,<span class="number">1</span>,<span class="number">8</span>,<span class="number">4</span>])</span><br><span class="line">x[i] =<span class="number">99</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">i = [<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">4</span>,<span class="number">4</span>]</span><br><span class="line">x = np.zeros(<span class="number">10</span>)</span><br><span class="line">np.add.at(x,i,<span class="number">1</span>)</span><br><span class="line">x <span class="comment"># 索引素组的下标出现多少次， x在该下标下</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([0., 0., 1., 2., 3., 0., 0., 0., 0., 0.])
+</code></pre>
+<h2 id="数组的排序">数组的排序</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = np.array([<span class="number">2</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">5</span>])</span><br><span class="line">np.sort(x) <span class="comment"># 不修改原始输入数组的基础 返回排序了的数组</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([1, 2, 3, 4, 5])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line">x.sort() <span class="comment">#原来的数组改变</span></span><br><span class="line">x</span><br></pre></td></tr></table></figure>
+<pre><code>[2 1 4 3 5]
+
+
+
+
+
+array([1, 2, 3, 4, 5])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = np.array([<span class="number">2</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">5</span>])</span><br><span class="line">i = np.argsort(x)</span><br><span class="line">i <span class="comment">#返回原始数组排好序的索引值</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([1, 0, 3, 2, 4], dtype=int64)
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x[i] <span class="comment">#花哨数组</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([1, 2, 3, 4, 5])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rand = np.random.RandomState(<span class="number">42</span>)</span><br><span class="line">X = rand.randint(<span class="number">0</span>, <span class="number">10</span>, (<span class="number">4</span>,<span class="number">6</span>))</span><br><span class="line">X</span><br></pre></td></tr></table></figure>
+<pre><code>array([[6, 3, 7, 4, 6, 9],
+       [2, 6, 7, 4, 3, 7],
+       [7, 2, 5, 4, 1, 7],
+       [5, 1, 4, 0, 9, 5]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.sort(X, axis=<span class="number">0</span>) <span class="comment">#每一列排序</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([[2, 1, 4, 0, 1, 5],
+       [5, 2, 5, 4, 3, 7],
+       [6, 3, 7, 4, 6, 7],
+       [7, 6, 7, 4, 9, 9]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.sort(X, axis=<span class="number">1</span>) <span class="comment">#沿行排序</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([[3, 4, 6, 6, 7, 9],
+       [2, 3, 4, 6, 7, 7],
+       [1, 2, 4, 5, 7, 7],
+       [0, 1, 4, 5, 5, 9]])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = np.array([<span class="number">7</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span> ,<span class="number">6</span>, <span class="number">5</span> ,<span class="number">4</span>])</span><br><span class="line">np.partition(x, <span class="number">3</span>) <span class="comment">#返回 x 中 第 3 小的值， 这个值在返回数组的最 左边 ，其他数字随机排列</span></span><br></pre></td></tr></table></figure>
+<pre><code>array([2, 1, 3, 4, 6, 5, 7])
+</code></pre>
+<h2 id="numpy的结构化数组">numpy的结构化数组</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">name = [<span class="string">'Alice'</span>,<span class="string">'Bob'</span>,<span class="string">'Cathy'</span>,<span class="string">'Doug'</span>]</span><br><span class="line">age = [<span class="number">25</span>, <span class="number">45</span>, <span class="number">37</span>, <span class="number">19</span>]</span><br><span class="line">weight = [<span class="number">55.0</span>, <span class="number">85.5</span>, <span class="number">68.0</span>, <span class="number">61.5</span>]</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">data = np.zeros(<span class="number">4</span>, dtype={<span class="string">'names'</span>:(<span class="string">'name'</span>, <span class="string">'age'</span>, <span class="string">'weight'</span>),</span><br><span class="line">                         <span class="string">'formats'</span>: (<span class="string">'U10'</span>,<span class="string">'i4'</span>, <span class="string">'f8'</span>)})</span><br><span class="line">data.dtype</span><br></pre></td></tr></table></figure>
+<pre><code>dtype([('name', '&lt;U10'), ('age', '&lt;i4'), ('weight', '&lt;f8')])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">data[<span class="string">'name'</span>] = name</span><br><span class="line">data[<span class="string">'age'</span>] = age</span><br><span class="line">data[<span class="string">'weight'</span>],data</span><br></pre></td></tr></table></figure>
+<pre><code>(array([0., 0., 0., 0.]),
+ array([('Alice', 25, 0.), ('Bob', 45, 0.), ('Cathy', 37, 0.),
+        ('Doug', 19, 0.)],
+       dtype=[('name', '&lt;U10'), ('age', '&lt;i4'), ('weight', '&lt;f8')]))
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data[-<span class="number">1</span>][<span class="string">'name'</span>],data[<span class="string">'name'</span>][-<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
+<pre><code>('Doug', 'Doug')
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">np.dtype({<span class="string">'names'</span>:(<span class="string">'name'</span>, <span class="string">'age'</span>, <span class="string">'weight'</span>),</span><br><span class="line">                         <span class="string">'formats'</span>: (<span class="string">'U10'</span>,<span class="string">'i4'</span>, <span class="string">'f8'</span>)})</span><br></pre></td></tr></table></figure>
+<pre><code>dtype([('name', '&lt;U10'), ('age', '&lt;i4'), ('weight', '&lt;f8')])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">np.dtype({<span class="string">'names'</span>:(<span class="string">'name'</span>, <span class="string">'age'</span>, <span class="string">'weight'</span>),</span><br><span class="line">                         <span class="string">'formats'</span>: ((np.str_, <span class="number">10</span>),<span class="built_in">int</span> , np.float32)})</span><br></pre></td></tr></table></figure>
+<pre><code>dtype([('name', '&lt;U10'), ('age', '&lt;i4'), ('weight', '&lt;f4')])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.dtype([(<span class="string">'name'</span>, <span class="string">'S10'</span>), (<span class="string">'age'</span>,<span class="string">'i4'</span>),(<span class="string">'weight'</span>,<span class="string">'f8'</span>)])</span><br></pre></td></tr></table></figure>
+<pre><code>dtype([('name', 'S10'), ('age', '&lt;i4'), ('weight', '&lt;f8')])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.dtype(<span class="string">'S10, i4, f8'</span>) <span class="comment">#默认命名</span></span><br></pre></td></tr></table></figure>
+<pre><code>dtype([('f0', 'S10'), ('f1', '&lt;i4'), ('f2', '&lt;f8')])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">李沐</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/机器学习//" class="article-tag-list-link color5">机器学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
+      
 
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/10/12/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B9%8Bnumpy/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2022/10/12/pythonlearning/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Study Python
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2022/09/12/Linux-Notebook/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux Notebook</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#py%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">py中的数据类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%9F%BA%E7%A1%80"><span class="toc-number">2.</span> <span class="toc-text">数据基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%9A%E7%94%A8%E7%9A%84%E5%87%BD%E6%95%B0"><span class="toc-number">3.</span> <span class="toc-text">通用的函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E8%AE%A1%E7%AE%97%EF%BC%9A-%E5%B9%BF%E6%92%AD"><span class="toc-number">4.</span> <span class="toc-text">数组的计算： 广播</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AF%94%E8%BE%83-%E6%8E%A9%E7%A0%81-%E5%92%8C%E5%B8%83%E5%B0%94%E9%80%BB%E8%BE%91"><span class="toc-number">5.</span> <span class="toc-text">比较 掩码 和布尔逻辑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8A%B1%E5%93%A8%E7%9A%84%E7%B4%A2%E5%BC%95"><span class="toc-number">6.</span> <span class="toc-text">花哨的索引</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E6%8E%92%E5%BA%8F"><span class="toc-number">7.</span> <span class="toc-text">数组的排序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#numpy%E7%9A%84%E7%BB%93%E6%9E%84%E5%8C%96%E6%95%B0%E7%BB%84"><span class="toc-number">8.</span> <span class="toc-text">numpy的结构化数组</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -239,9 +932,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
@@ -330,11 +1023,11 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">李沐</a>
+                <a href="javascript:void(0)" class="js-tag color4">吴恩达</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">吴恩达</a>
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
             
             <div class="clearfix"></div>
